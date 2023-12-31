@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buselog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&family=Lato:wght@700&family=PT+Sans&display=swap" rel="stylesheet">
+    <style>
+      .image {
+        width: 300px;
+        border-radius: 4px;
+      }
+      .search-bar {
+        border-radius: 10px;
+        border-style: solid;
+        border-color: rgb(251, 251, 251);
+        box-shadow: 1px 2px 5px;
+        box-shadow: grey;
+        display: block;
+      }
+      .title {
+        display: inline-block;
+        margin-bottom: 2px;
+        margin-top: 0px;
+        font-family: PT Sans;
+        font-weight: bold;
+      }
+      .views {
+        display: inline-block;
+        margin-top: 2px;
+        font-family:PT Sans;
+        font-size: 12px;
+        
+      }
+      .video-preview {
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+      }
+
+      .channel-picture {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+        margin-right: 10px;
+      }
+
+      .video-info {
+        display: inline-block;
+        width: 200px;
+      }
+
+      .profile-picture {
+        width:40px;
+        
+      }
+
+      .thumbnail-row {
+        margin-bottom:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="search-bar" type="text" placeholder="Search" />
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="image" src="image1.jpg" />
+      </div>
+      <div style="">
+        <div class="channel-picture"><img class="profile-picture" src="channelprofile.jpg" /></div>
+        <div class="video-info">
+          <p class="title">
+            VLOG| Haftalık Yemek Hazırlığı, Temizlik, Bakım Rutinim(!), Projeler
+          </p>
+          <p class="views">648 views &#183; 3 weeks ago</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="video-preview">
+      <div class="thumbnail-row"><img class="image" src="yt.jpg" /></div>
+      <div class="channel-picture"><img class="profile-picture" src="channelprofile.jpg"></div>
+      <div class="video-info"><p class="title">Hayatı Anlamlı Hale Getirmek</p>
+      <p class="views">2K views &#183; 4 months ago</p></div>
+    </div>
+  </body>
+</html>

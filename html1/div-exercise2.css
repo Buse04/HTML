@@ -1,0 +1,39 @@
+.card {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 450px;
+    border-radius: 6px;
+    
+}
+
+.giraffe {
+    width: 50px;
+    vertical-align: middle;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 50px;
+    
+}
+
+.text-box {
+    border: none;
+    width: 300px;
+}
+
+.button {
+    width:80px;
+    height: 30px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgb(44, 44, 232);
+    background-color: rgb(47, 47, 238);
+    color: white;
+    font-weight: bold;
+}
+
+.button:hover {
+    opacity: 0.8;
+}

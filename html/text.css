@@ -1,0 +1,24 @@
+.title {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom:100px;
+  }
+  .text {
+    margin-bottom:50px;
+    font-family:Lato;
+    font-size: 14px;
+    background-color: rgb(112, 172, 196);
+    color:white;
+    text-align: center;
+    padding-top:18px;
+    padding-bottom:18px;
+
+  }
+  .link {
+    color:rgb(197, 94, 110);
+    cursor:pointer;
+  }
+  .link:hover {
+    text-decoration: underline;
+  }
