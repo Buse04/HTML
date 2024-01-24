@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button onclick="
+            playGame(`heads`);
+            ">heads</button>
+            <button onclick="
+            playGame(`tails`);
+            ">Tails</button>
+        <script>
+            function playGame (playerMove) {
+                const computerMove = pickComputerMove();
+                if (playerMove === `tails`) {
+                    if (computerMove === `tails`) {
+                        alert(`You win!`)
+                    }
+                    else if (computerMove === `heads`) {
+                        alert(`You lose`)
+                    }
+                }
+
+                if (playerMove === `heads`) {
+                    if (computerMove === `tails`) {
+                        alert(`You lose!`);
+                    }
+                    else if (computerMove === `heads`) {
+                        alert(`You win!`);
+                    }
+                }
+            }
+
+            function pickComputerMove () {
+                const randomNumber = Math.random();
+                let computerMove = ``;
+                if (randomNumber <= 1/2  && randomNumber > 0) {
+                    computerMove = `heads`
+                }
+                else if(randomNumber > 1/2 && randomNumber < 1) {
+                    computerMove = `tails`
+                }
+                return computerMove;
+            }
+        </script>
+    </body>
+</html>

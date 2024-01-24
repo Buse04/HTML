@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function calculate(i) {
+                alert(i *0.1)
+            }
+            calculate(2000);
+
+            const product ={
+                name: `socks`,
+                price: 1090
+            };
+
+            console.log(product);
+
+            product.stock= true;
+            console.log(product);
+
+            product.name = `cotton socks`,
+            console.log(product);
+
+            delete product.stock;
+            console.log(product);
+
+            console.log(product[`name`]); // tehere is no difefrence between .name and [`name`]. But when the name has some special characters it is so conveninet to use [``] type. 
+
+            const product2 = {
+                name: `Shirt`,
+                [`delivery-time`]: `1 day`,
+                rating: {
+                    stars: 4.5,
+                    count: 87,
+                }
+            };
+
+            console.log(product2[`delivery-time`]);
+            console.log(product2.rating.stars);
+
+            console.log(JSON.stringify(product2)); // stringfy is a medhod in JSON object
+            // JSON.parse will convert JSON to JS 
+        </script>
+    </body>
+</html>
