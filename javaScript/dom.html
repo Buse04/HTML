@@ -2,8 +2,19 @@
 <html>
     <head></head>
     <body>
+        <button onclick="
+            subscribe();
+            ">Subscribe</button>
         <script>
-            
+            function subscribe() {
+                
+                if (document.querySelector(`button`).innerHTML === `Subscribe`) {
+                    document.querySelector(`button`).innerHTML = `Subscribed`
+                }
+                else if (document.querySelector(`button`).innerHTML === `Subscribed`){
+                    document.querySelector(`button`).innerHTML = `Subscribed`
+                }
+            }
         </script>
     </body>
 </html>
