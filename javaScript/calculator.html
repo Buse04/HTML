@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p>Tax and Fee Calculator</p>
+        <input placeholder="Cost of order" class="cost" onkeydown=" handle(event)">
+        <button onclick="calculateTotal();
+        ">Calculate</button>
+        <p class="total-cost"></p>
+        <script>
+            function calculateTotal () {
+                let costt = document.querySelector(`.cost`)
+                let totalcost = Number(costt.value);
+
+                if (totalcost <= 40) {
+                    totalcost = totalcost + 10
+                }
+                document.querySelector(`.total-cost`).innerHTML = `${totalcost} TL`
+            }
+            function handle () {
+                if(event.key === `Enter`) {
+                    calculateTotal();
+                }
+            }
+        </script>
+    </body>
+</html>
