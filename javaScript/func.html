@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input placeholder="Type your first name" class="name">
+        <input placeholder="Type your last name" class="lastname">
+        <button class="enter" onclick="
+        enter();
+        ">Enter
+        </button>
+        <p id="email"></p>
+       <script>
+        function enter() { 
+            const firstname= document.querySelector(`.name`)
+            const a = firstname.value
+            const lastname= document.querySelector(`.lastname`)
+            const b= lastname.value
+            let email= `${a}.${b}@gmail.com`
+            document.querySelector(`#email`).innerHTML = `${email}`
+            
+            
+        };
+
+       
+        
+        
+       </script>
+    </body>
+</html>
