@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+         <p>To-Do List</p>
+        <input placeholder="Add your task" class="to-do" onkeydown="
+        enter(event);
+        ">
+        <button onclick="
+        add(); 
+        " class="add-button">Add</button>
+
+        <div class="your-tasks"></div>
+
+        <script>
+            const to_do_list = [];
+
+
+            function display(){
+                let todolistHTML = ``;
+            
+                for (i = 0; i < to_do_list.length; i++){
+                    const todo = to_do_list[i];
+                    const html = `<p> ${todo}<p>`;
+                    todolistHTML += html;
+                }
+                document.querySelector(`.your-tasks`).innerHTML = todolistHTML
+            }
+                
+            function add(){
+                const task= document.querySelector(`.to-do`)
+                const added_task = task.value
+                to_do_list.push(added_task);
+                task.value = ``;
+                display();
+            }
+
+            function enter(){
+                if(event.key === `Enter`){
+                    add();
+                }
+            }
+            
+
+             
+
+        </script> 
+    </body>
+</html>

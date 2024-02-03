@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input placeholder="Write your task" class="type" onkeydown="enter(event);">
+        <button class="to_do" onclick="add();">Add</button>
+        <p id="your_task"></p>
+        <script>
+            function add() {
+                const task = document.querySelector(`.type`)
+                let added_task = task.value
+                document.querySelector(`#your_task`).innerHTML = `${added_task}`
+            }
+
+            function enter(){
+                if(event.key ===`Enter`) {
+                    add();
+                }
+            }
+        </script>
+    </body>
+</html>
